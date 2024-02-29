@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 요소에 box-sizing 설정 */
+      * {
+        box-sizing: border-box;
+      }
+      /* header 요소 : 배경색#333, 안쪽여백30, 가운데정렬, 글꼴크기35, 글자색 흰색 */
+      header {
+        background: #333;
+        padding: 30px;
+        color: white;
+      }
+      /* nav 요소 : 높이 500px, 배경색#ccc, 안쪽여백20 */
+      nav {
+        height: 500px;
+        background: #ccc;
+        padding: 20px;
+        float: left;
+        width: 30%;
+      }
+      /* article 요소 : 높이 500px, 배경색#f1f1f1, 안쪽여백20 */
+      article {
+        height: 500px;
+        background: #f1f1f1;
+        padding: 20px;
+        float: left;
+        width: 70%;
+      }
+      /* footer 요소 : 배경색#777, 안쪽여백10, 가운데정렬, 글자색 흰색 */
+      footer {
+        background: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Cities</h2>
+    </header>
+    <section class="clearfix">
+      <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>London</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat maiores animi rem nisi optio ratione quam veritatis nobis unde et sunt
+          reiciendis distinctio voluptatem facilis earum, ad, tempore nesciunt sint!
+        </p>
+        <p>
+          <!-- lorem100 -->
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti iste expedita ea placeat voluptas soluta, quos maxime excepturi quae,
+          magni illo suscipit aspernatur ratione voluptatem hic velit, illum eligendi nisi facilis ipsa consequuntur? Molestiae sed obcaecati
+          architecto explicabo ipsam illum ullam, recusandae dolorem nisi nostrum dolores, suscipit vero laborum, quasi quaerat. Quae earum
+          praesentium tenetur quis itaque quas debitis dolorum soluta voluptas distinctio, deleniti recusandae eum, maxime laborum doloribus corporis
+          quam nemo illum voluptates repellat adipisci voluptate, inventore enim? Quaerat, eveniet rerum. Doloribus, veritatis voluptas sint qui modi
+          repellat recusandae aliquid! Sint, reiciendis iusto omnis officia accusamus quas ipsa optio!
+        </p>
+      </article>
+    </section>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
