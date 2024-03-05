@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 요소 크기 산정시 border 포함 */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* body 배경색 #ecf0f1 */
+      body {
+        background: #ecf0f1;
+      }
+
+      /* wrapper max-width 60rem width 100%, margin 2rem auto */
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+
+      /* flexbg flex 컨테이너 설정 */
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        /* 배경색 흰색, width 60%, padding 1.618rem */
+        background: white;
+        width: 60%;
+        padding: 1.618rem;
+        order: 2;
+      }
+
+      /* sidebar width 20%, padding 1.618rem */
+      .flexbg .sidebar {
+        /* 배경색 흰색, width 60%, padding 1.618rem */
+        background: white;
+        width: 60%;
+        padding: 1.618rem;
+        color: white;
+      }
+
+      .flexbg .left {
+        /* 배경색 #3498db */
+        order: 1;
+        background-color: #3498db;
+      }
+      .flexbg .right {
+        /* 배경색 #34495e */
+        order: 3;
+        background-color: #34495e;
+      }
+
+      /* 481 ~ 768 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          /* 배경색 흰색, width 60%, padding 1.618rem */
+          width: 100%;
+          order: 1;
+        }
+
+        /* sidebar width 20%, padding 1.618rem */
+        .flexbg .sidebar {
+          /* 배경색 흰색, width 60%, padding 1.618rem */
+          width: 50%;
+        }
+        .flexbg .left {
+          /* 배경색 #3498db */
+          order: 2;
+        }
+      }
+      /* 0 ~ 480 */
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos harum facere debitis nulla eum dolorem quisquam maiores earum sed
+          excepturi distinctio aut consequatur facilis, possimus similique repudiandae incidunt maxime dolore deserunt ea obcaecati molestiae.
+          Repellat, laudantium quidem ad culpa quo consequuntur incidunt officia nihil commodi nisi tenetur assumenda cum corporis qui dolorum odit.
+          Consequatur unde possimus ut doloremque et fugiat id, amet incidunt reprehenderit architecto ratione est non magnam obcaecati quisquam!
+          Pariatur ipsam, placeat iste sit excepturi ratione asperiores, ut, qui dolorum culpa eaque quibusdam! Labore consectetur quam non, totam
+          provident enim soluta aut facere iusto perferendis quisquam aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos harum facere debitis nulla eum dolorem quisquam maiores earum sed
+          excepturi distinctio aut consequatur facilis, possimus similique repudiandae incidunt maxime dolore deserunt ea obcaecati molestiae.
+          Repellat, laudantium quidem ad culpa quo consequuntur incidunt officia nihil commodi nisi tenetur assumenda cum corporis qui dolorum odit.
+          Consequatur unde possimus ut doloremque et fugiat id, amet incidunt reprehenderit architecto ratione est non magnam obcaecati quisquam!
+          Pariatur ipsam, placeat iste sit excepturi ratione asperiores, ut, qui dolorum culpa eaque quibusdam! Labore consectetur quam non, totam
+          provident enim soluta aut facere iusto perferendis quisquam aperiam.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus expedita a autem. Illum labore obcaecati suscipit similique, ad a
+          voluptatum velit magni deserunt deleniti vero tempore magnam exercitationem totam? Facilis architecto quisquam neque. Laudantium, error
+          illo. Omnis dolore quia a similique, libero accusamus hic, repellendus sequi, officiis ab optio suscipit!
+        </p>
+      </aside>
+      <aside class="sidebar right">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum omnis nulla veritatis, rem assumenda repudiandae earum facere nemo
+          aliquid rerum quasi qui quisquam quidem odio, atque ea suscipit fugiat dolorem alias? A ad non pariatur, dicta nostrum quo ipsam repellendus
+          eum rerum nemo doloremque animi reprehenderit distinctio, itaque, error voluptatum!
+        </p>
+      </aside>
+    </div>
+  </body>
+</html>
